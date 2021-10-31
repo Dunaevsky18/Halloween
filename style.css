@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #e8e6f2;
+  color: black;
+  font-size: 20px;
+}
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+.header {
+  margin-bottom: 10px;
+}
+.inner-header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+
+.content {
+  width: 80%;
+  float: left;
+}
+.inner-content {
+  background-image:url(https://images.unian.net/photos/2021_10/1633102901-5251.jpg?0.049824085029655185);
+  min-height: 700px;
+}
+
+.sidebar {
+  width: 20%;
+  float: left;
+  padding-left: 10px;
+}
+.inner-sidebar{
+background: #e8e6f2;
+    min-height: 700px;
+}
+
+.footer {
+  margin-top: 10px;
+}
+.inner-footer {
+  background: #666365;
+  height: 100px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #71699e;
+  color: #fff;
+  font-family: Helvetica;
+}
+.header_item{
+padding: 10px 15px;
+font-size: 20px;
+margin-left: 5px;
+}
+.header_item:hover{
+background-color: #FF9900;
+border-radius: 4px;
+}
+.headerlogo {
+  font-weight: bold;
+}
+.headerButton{
+  cursor: pointer;
+
+}
